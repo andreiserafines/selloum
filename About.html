@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-with, initial-scale=1.">  
+    <title>Selloum Atbp. Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+   
+    
+</head>
+<body>
+
+   <div class="header">   
+     <div class="container">
+       <div class="navbar"> 
+           <div class="logo">
+               <a href="index.html"><img src="iya.png" height="50">
+               </div></a>
+           <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="About.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="Account.html">Account</a></li>         
+               </ul>
+           </nav>
+      </div>
+      
+           
+       </div>
+       <div class="row">
+           <div class="col-2">
+               <h2>Here are the Frequently Ask Questions:</h2>
+               <video src="Video.mp4" autoplay height="450px"></video>             
+           </div>
+           <div class="col-2">
+               <img src="selloum.png">
+           </div>
+       </div>
+   </div>
+</div>    
+
+<!-------Brands----------------------------------------------------------------------->
+<div class="brands">
+   <div class="small-container">
+       <div class="row">
+        <p>We offer a variety of plants from sunlight-loving to shade-loving plants, trailing, shrubs, and trees. <br>
+            We have Philodendrons, Ferns, Aglaonemas, Syngonium, Rubber trees, Caladiums, Peacelilies, and so much more. <br>
+             These will surely give a dramatic accent to your home or office. <br> <br> <br> <br> </p>
+           <div class="col-5">
+               <a href="https://www.gardein.com/"><img src="gardein.png"></a>
+           </div>
+           <div class="col-5">
+               <a href="https://meatlessfarm.com/"><img src="meat.png"></a>
+           </div>
+           <div class="col-5">
+               <a href="https://www.beyondmeat.com/"><img src="beyond.png"></a>
+           </div>
+           <div class="col-5">
+               <a href="https://www.morningstarfarms.com/en_US/home.html"><img src="MSF.png"></a>
+           </div>
+           <div class="col-5">
+               <a href="https://www.amys.com/"><img src="amys.png"></a>
+           </div>
+       </div>
+   </div>
+</div>
+
+<!---------Footer----------------------------------------------------------------------------------------------------------------------------->
+
+<div class="footer">
+   <div class="container">
+       <div class="row">
+           <div class="footer-col-1">
+               <h3>Download Our App</h3>
+               <p>Download App for Android and ios mobile phone.</p>
+               <div class="app-logo">
+                   <a href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Jul0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-ph-1003227-med-hasem-py-Evergreen-Jul0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700035189602388_creativeid_284321832633_device_c&gclid=Cj0KCQjwraqHBhDsARIsAKuGZeF5cjvgs1IqscnepRbWUWCSIQztIlQlNXEuSqENytU_AoiUimlt-PEaAlqDEALw_wcB&gclsrc=aw.ds"><img src="google.jpg"></a>
+                   <a href="https://apps.apple.com/us/genre/ios-games/id6014"><img src="app.jpg"></a>
+               </div>
+           </div>
+           <div class="footer-col-2">
+               <a href="index.html"><img src="iya.png" height="80">
+               <p>Selloum atbp aims to provide you with a convenient way <br> to shop in the comfort of your homes.</p>
+           </div></a>
+           <div class="footer-col-3">
+               <h3>Useful Links</h3>
+               <ul>
+                   <a href="index.html"><li>Coupons</li></a>
+                   <a href="index.html"><li>Blog Post</li></a>
+                   <a href="index.html"><li>Return Policy</li></a>
+                   <a href="index.html"><li>Join Affiliate</li></a>
+               </ul>
+           </div>
+           <div class="footer-col-4">
+               <h3>Follow us</h3>
+               <ul>
+                   <a href="https://www.facebook.com/SelloumAtbp"><li>Facebook</li></a>
+                   <a href="https://twitter.com/?lang=en"><li>Twitter</li></a>
+                   <a href="https://www.instagram.com/"><li>Instagram</li></a>
+                   <a href="https://www.youtube.com/"><li>YouTube</li></a>
+               </ul>
+           </div>
+       </div>
+       <hr>
+       <p class="Copyright">Copyright 2021 - Websystem</p>
+   </div>
+</div>
+<!-------------js for toggle menu---------------------------------------------------------------------------------------------------------------->
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function  menutoggle(){
+           if(MenuItems.style.maxHeight == "0px");
+           {
+               MenuItems.style.maxHeight = "200px";
+           }
+           else
+           {
+               MenuItems.style.maxHeight = '0px';
+           }
+       }
+   </script>
+
+</body>
+</html>

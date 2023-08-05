@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout Card</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- library validate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</head>
+<body>
+
+   <div class="header">   
+     <div class="container">
+       <div class="navbar"> 
+           <div class="logo">
+               <a href="index.html"><img src="iya.png" height="50">
+               </div></a>
+           <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="About.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="Account.html">Account</a></li>         
+               </ul>
+           </nav>
+         
+      </div>
+<!----------------------------------------Responsive Checkout Form-------------------------------------------------------------------------->
+<div class="row">
+    <div class="col-75">
+        <div class="small-container">
+            <h1> Checkout Form</h1>
+            <form id="validate" action="checkout.php" method="post">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user" name="name"></i>Full Name</label>
+                        <input type="text" id="fname"  placeholder="Full name" required>
+                        <label for="email"><i class="fa fa-envelope" name="email"></i> Email</label>
+                        <input type="text" id="email"  placeholder="@gmail.com" required>
+                        <label for="adr"><i class="fa fa-address-card-o" name="address"></i> Address</label>
+                        <input type="text" id="adr"  placeholder="Address" required>
+                        <label for="city"><i class="fa fa-institution" name="city" ></i> City</label>
+                        <input type="text" id="city" placeholder="City" required>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state" name="state">State</label>
+                                <input type="text" id="state" placeholder="State"required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip" name="zip">Zip code</label>
+                                <input type="text" id="zip"  placeholder="Zip code"required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+
+                        <label for="cname" name="cardname">Name on Card</label>
+                        <input type="text" id="cname"  placeholder="Card name"required>
+                        <label for="ccnum" name="cardnumber">Credit card number</label>
+                        <input type="text" id="ccnum"  placeholder="card number"required>
+                        <label for="expmonth" name="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth"  placeholder="Exp month"required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear" name="expyear">Exp Year</label>
+                                <input type="text" id="expyear"  placeholder="Exp year"required>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing</label>
+                <input type="submit" value="Continue to checkout" class="btn"></input>
+            </form>
+        </div>
+    </div>
+   <!---------Footer----------------------------------------------------------------------------------------------------------------------------->
+
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Jul0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-ph-1003227-med-hasem-py-Evergreen-Jul0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700035189602388_creativeid_284321832633_device_c&gclid=Cj0KCQjwraqHBhDsARIsAKuGZeF5cjvgs1IqscnepRbWUWCSIQztIlQlNXEuSqENytU_AoiUimlt-PEaAlqDEALw_wcB&gclsrc=aw.ds"><img src="google.jpg"></a>
+                    <a href="https://apps.apple.com/us/genre/ios-games/id6014"><img src="app.jpg"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="iya.png" height="80">
+                <p>Selloum atbp aims to provide you with a convenient way <br> to shop in the comfort of your homes.</p>
+            </div></a>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <a href="index.html"><li>Coupons</li></a>
+                    <a href="index.html"><li>Blog Post</li></a>
+                    <a href="index.html"><li>Return Policy</li></a>
+                    <a href="index.html"><li>Join Affiliate</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/SelloumAtbp"><li>Facebook</li></a>
+                    <a href="https://twitter.com/?lang=en"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/"><li>Instagram</li></a>
+                    <a href="https://www.youtube.com/"><li>YouTube</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - Websystem</p>
+    </div>
+</div>
+<!-- script validate js ------------------------------------------------------------------------------>
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Please input full name*",
+            email:"Please input email*",
+            city:"Please input city*",
+            address:"Please input address*",
+            state:"Please input state*",
+            zip:"Please input address*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+</script>
+</body>
+</html>
